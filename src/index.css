@@ -1,0 +1,800 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --background-color: #EDECE1;
+    --accent-color: #DFD99F;
+    --dark-font: #313A39;
+    --android-button: #98E2C8;
+    --apple-button: #717A79;
+    --placeholder:#a0a8a7;
+}
+
+header{
+    background-color: var(--accent-color) !important;
+}
+
+body{
+    background-color: var(--background-color) !important;
+    font-family: source-sans-pro, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: raleway, sans-serif;
+    color: var(--dark-font) !important;
+}
+
+h2{
+    font-size: 34px !important;
+}
+
+h1, h2, h6{
+    font-weight: 600 !important;
+}
+
+/* -------------------------------------------------------------------Landing Section------------------------------------------------------------------ */
+
+header{
+    padding: 1rem;
+}
+
+.account-buttons button{
+    width: 6rem;
+    font-family: raleway;
+    border: none;
+    background-color: var(--background-color);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-font);
+}
+
+.account-buttons button:hover{
+    width: 6rem;
+    font-family: raleway;
+    border: 3px solid var(--background-color);
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .1s linear;
+}
+
+/* .menuItems{
+    padding: .2rem 1.3rem;
+    border: 1.5px solid var(--grey);
+    border-radius: 4px;
+    color: var(--text-primary);
+    transition: all .2s ease-out; 
+}
+
+.activeMenu, .menuItems:hover{
+    box-shadow: 2px 2px 0px 0px var(--grey);
+} */
+
+.carousel-img-section #carousel-img{
+    width: 80%;
+}
+
+
+.landing-section, .author-section {
+    background-color: var(--accent-color);
+
+}
+
+.landing-section #illustration1, #illustration2{
+    width: 12%;
+    opacity: 80%;
+}
+
+#illustration2{
+    transform: scale(-1, 1);
+}
+
+.carousel-caption h5, p{
+    color: var(--background-color) !important;
+}
+
+/* -------------------------------------------------------------------Author Section------------------------------------------------------------------ */
+
+.author-section{
+    background-color: var(--background-color);
+}
+
+.author-mask{
+    width: 100%;
+    height: 100px;
+    background-color: var(--accent-color);
+}
+
+.author-mask-outer{
+    width: 16rem;
+    height: 4rem;
+    background-color: var(--background-color);
+    border-radius: 15px 15px 0 0;
+    bottom: 100%;
+    z-index: 1 !important;
+}
+
+.author-mask-outer::before{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    right: 16rem !important;
+    bottom: 0.01rem;
+    height: 50px;
+    width: 25px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 15px 0 0 var(--background-color);
+
+}
+
+.author-mask-outer2{
+    width: 15rem;
+    height: 4rem;
+    background-color: var(--background-color);
+    border-radius: 15px 15px 0 0;
+    bottom: 100%;
+
+}
+
+.author-mask-outer2::before{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    left: 16.79rem !important;
+    bottom: -0.8rem;
+    height: 50px;
+    width: 25px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 15px 0 0 var(--background-color);
+    transform: rotate(90deg);
+
+}
+
+.author-mask-outer #top{
+    font-weight: 300;
+}
+
+.author-mask-outer #authors{
+    font-weight: 600;
+}
+
+.author-mask-outer i{
+    font-size: 10px;
+}
+
+/* ------------------------Author Section / Author Cards------------------------ */
+
+.author-card-base-1{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/authors/068a60b41d286fbed0f447dd4e57a924.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--accent-color);
+    border-radius: 18px;
+}
+
+.author-card-base-2{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/authors/suzannecollins-2020-photocredittoddplitt.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--accent-color);
+    border-radius: 18px;
+}
+
+.author-card-base-3{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/authors/dan-brown-2000-83001493b69e442cae02620306e58eac.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--accent-color);
+    border-radius: 18px;
+}
+
+.author-card-base-4{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/authors/Neil-Gaiman-c-Kimberley-Butler-web.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--accent-color);
+    border-radius: 18px;
+}
+
+.author-card-base-5{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/authors/Jhumpa-Lahiri\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--accent-color);
+    border-radius: 18px;
+}
+
+.author-card-base-6{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/authors/rs-172373-42-53337184.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--accent-color);
+    border-radius: 18px;
+}
+
+.author-card-mask{
+    width: 9rem;
+    height: 13.5rem;
+    border-radius: 18px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,1) 5%,
+        rgba(0,0,0,0) 40%
+    );
+}
+
+.author-card-mask h4{
+    color: var(--background-color) !important;
+    margin-left: .8rem;
+    font-size: 15px;
+    line-height: 23rem;
+    color: var(--background-color);
+}
+
+/* --------------------------Author Section / Slider Section-------------------------- */
+
+.author-scroller-inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-shadow: 12px 12px 12px 12px var(--dark-font);
+}
+
+.author-card-base-1, .author-card-base-2, .author-card-base-3, .author-card-base-4, .author-card-base-5, .author-card-base-6{
+    box-shadow: 0px 15px 25px -20px var(--dark-font);
+}
+
+.author-scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      var(--background-color) 20%,
+      var(--background-color) 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, var(--background-color) 20%, var(--background-color) 80%, transparent);
+}
+
+.author-scroller[data-animated="true"] .author-scroller-inner {
+width: max-content;
+flex-wrap: nowrap;
+animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.author-scroller[data-direction="right"] {
+--_animation-direction: reverse;
+}
+
+.author-scroller[data-direction="left"] {
+--_animation-direction: forwards;
+}
+
+.author-scroller[data-speed="fast"] {
+--_animation-duration: 20s;
+}
+
+.author-scroller[data-speed="slow"] {
+--_animation-duration: 60s;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+/* -------------------------------------------------------------------Book Section------------------------------------------------------------------ */
+
+.book-section{
+    background-color: var(--accent-color);
+}
+
+.book-mask{
+    width: 100%;
+    height: 100px;
+    background-color: var(--background-color);
+}
+
+.book-mask-outer{
+    right: 50px;
+    width: 16rem;
+    height: 4rem;
+    background-color: var(--accent-color);
+    border-radius: 15px 15px 0 0;
+    bottom: 100%;
+    z-index: 1 !important;
+    /* z-index: -1 !important; */
+}
+
+.book-mask-outer::before{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    right: 16rem !important;
+    bottom: 0.01rem;
+    height: 50px;
+    width: 25px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 15px 0 0 var(--accent-color);
+    /* z-index: 1 !important; */
+}
+
+.book-mask-outer2{
+    right: 50px;
+    width: 15rem;
+    height: 4rem;
+    background-color: var(--accent-color);
+    border-radius: 15px 15px 0 0;
+    bottom: 100%;
+    /* z-index: 0 !important; */
+    /* z-index: -1 !important; */
+}
+
+.book-mask-outer2::before{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    left: 15.79rem !important;
+    bottom: -0.8rem;
+    height: 50px;
+    width: 25px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 15px 0 0 var(--accent-color);
+    transform: rotate(90deg);
+    /* z-index: 1 !important; */
+}
+
+.book-mask-outer #top{
+    font-weight: 300;
+}
+
+.book-mask-outer #books{
+    font-weight: 600;
+}
+
+.book-mask-outer i{
+    font-size: 10px;
+}
+
+/* ------------------------Book Section / Book Cards------------------------ */
+
+.book-card-base-1{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/books/hp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--background-color);
+    border-radius: 18px;
+}
+
+.book-card-base-2{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/books/thg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--background-color);
+    border-radius: 18px;
+}
+
+.book-card-base-3{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/books/tdc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--background-color);
+    border-radius: 18px;
+}
+
+.book-card-base-4{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/books/tgb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--background-color);
+    border-radius: 18px;
+}
+
+.book-card-base-4{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/books/tgb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--background-color);
+    border-radius: 18px;
+}
+
+.book-card-base-5{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/books/iom.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--background-color);
+    border-radius: 18px;
+}
+
+.book-card-base-6{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/books/The-Shining-300x493.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--background-color);
+    border-radius: 18px;
+}
+
+.book-card-mask{
+    width: 9rem;
+    height: 13.5rem;
+    border-radius: 13px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,1) 5%,
+        rgba(0,0,0,0) 40%
+    );
+}
+
+.book-card-mask h4{
+    color: var(--background-color) !important;
+    margin-left: .8rem;
+    font-size: 15px;
+    line-height: 23rem;
+    color: var(--background-color);
+}
+
+/* --------------------------Book Section / Slider Section-------------------------- */
+
+.book-scroller-inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-shadow: 12px 12px 12px 12px var(--dark-font);
+}
+
+.book-card-base-1, .book-card-base-2, .book-card-base-3, .book-card-base-4, .book-card-base-5, .book-card-base-6{
+    box-shadow: 0px 15px 25px -20px var(--dark-font);
+}
+
+.book-scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      var(--background-color) 20%,
+      var(--background-color) 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, var(--background-color) 20%, var(--background-color) 80%, transparent);
+}
+
+.book-scroller[data-animated="true"] .book-scroller-inner {
+width: max-content;
+flex-wrap: nowrap;
+animation: scroll var(--_animation-duration, 90s)
+    var(--_animation-direction, reverse) linear infinite;
+}
+
+.book-scroller[data-direction="right"] {
+--_animation-direction: reverse;
+}
+
+.book-scroller[data-direction="left"] {
+--_animation-direction: forwards;
+}
+
+.book-scroller[data-speed="fast"] {
+--_animation-duration: 20s;
+}
+
+.book-scroller[data-speed="slow"] {
+--_animation-duration: 60s;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - .5rem));
+    }
+}
+
+/* -------------------------------------------------------------------CTA Section------------------------------------------------------------------ */
+
+.leftSection{
+    padding: 3rem 0;
+}
+
+.email-input #email-box{
+    width: 60%;
+    height: 2rem;
+    border-radius: 6px;
+    box-shadow: 0px 5px 16px -11px var(--dark-font);
+}
+
+.app-download h3{
+    color: var(--dark-font) !important;
+    font-weight: 200;
+    font-size: 54px !important;
+}
+
+.app-download #better, .app-download #app{
+    color: var(--dark-font);
+    font-weight: 600;
+}
+
+.email-input #email-box::placeholder{
+    padding-left: .8rem;
+    color: var(--placeholder);
+}
+
+.download-buttons #android h5, .download-buttons #apple h5{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.download-buttons #android h5{
+    color: var(--apple-button) !important;
+}
+
+.download-buttons #apple h5{
+    color: var(--android-button) !important;
+}
+
+#android i, #apple i{
+    font-size: 26px;
+}
+
+.download-buttons button{
+    border: none;
+    width: 11.7rem;
+    height: 3rem;
+    border-radius: 8px;
+}
+
+.download-buttons #android{
+    background-color: var(--android-button);
+    box-shadow: 0px 10px 22px -14px var(--dark-font);
+}
+
+.download-buttons #apple{
+    background-color: var(--android-button);
+    box-shadow: 0px 10px 22px -11px var(--dark-font);
+}
+
+.download-buttons #apple{
+    background-color: var(--apple-button);
+}
+
+/* -------------------------------------------------------------------Footer Section------------------------------------------------------------------ */
+
+.footer-links-section #footer-links{
+    font-size: 10px;
+    color: var(--dark-font) !important;
+}
+
+.footer-title, .footer-content{
+    background-color: var(--accent-color);
+}
+
+.footer-links-section #hq, .footer-links-section #branch{
+    font-weight: 600;
+}
+
+.bottom-line{
+    width: 100%;
+    height: .00489em;
+    background-color: var(--apple-button);
+}
+
+.credit p{
+    font-size: 12px;
+    font-family: raleway;
+    font-weight: 500;
+    color: var(--dark-font) !important;
+}
+
+/* ______________________________________________________________Author Page______________________________________________________________ */
+
+.author-card-main-page-base-1{
+    width: 90%;
+    height: 30rem;
+    background-image: url("/images/authors/068a60b41d286fbed0f447dd4e57a924.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 12px solid var(--accent-color);
+    border-radius: 35px;
+    box-shadow: 0px 15px 25px -20px var(--dark-font);
+}
+
+/* .author-card-base-1{
+    box-shadow: 0px 15px 25px -20px var(--dark-font);
+} */
+
+.author-credits p{
+    color: var(--placeholder);
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.author-credits .author-details{
+    font-weight: 600;
+}
+
+.author-details-section{
+    max-width: 65%;
+}
+
+.author-title-section h3{
+    font-size: 38px;
+}
+
+.author-title-section #jk{
+    font-weight: 400;
+}
+
+.author-title-section #rowlings{
+    font-weight: 700;
+}
+
+.author-bio p{
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: var(--placeholder);
+}
+
+/* __________________________________________________________ */
+
+.author-book-main-page-base{
+    background-color: var(--accent-color);
+}
+
+.book-card-main-page-base-1{
+    width: 10rem;
+    height: 14rem;
+    background-image: url("/images/books/hp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--background-color);
+    border-radius: 18px;
+}
+
+.book-card-main-page-mask{
+    width: 9rem;
+    height: 13.5rem;
+    border-radius: 13px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,1) 5%,
+        rgba(0,0,0,0) 40%
+    );
+}
+
+.book-card-main-page-mask h4{
+    color: var(--background-color) !important;
+    margin-left: .8rem;
+    font-size: 15px;
+    line-height: 21rem;
+    color: var(--background-color);
+}
+
+.book-card-main-page-mask h6{
+    color: var(--background-color) !important;
+    margin-left: .8rem;
+    font-size: 15px;
+    margin-top: -10rem;
+    color: var(--background-color);
+}
+
+.author-container h3{
+    font-size: 38px;
+}
+
+.author-container #books-by{
+    font-weight: 400;
+}
+
+.author-container #author{
+    font-weight: 700;
+}
+
+.logout-section{
+    height: 80vh;
+}
+
+/* _______________________________________________________________________ */
+
+.book-card-base-1{
+    width: 60%;
+    height: 36rem;
+    background-image: url("/images/books/hp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 12px solid var(--accent-color);
+    border-radius: 35px;
+    box-shadow: 0px 15px 25px -15px var(--dark-font);
+}
+
+.book-price-section{
+    max-width: 90%;
+
+}
+
+.book-price-section h3{
+    font-size: 38px;
+}
+
+.book-properties{
+    max-width: 65%;
+}
+
+.book-properties p{
+    color: var(--apple-button);
+    font-weight: 600;
+}
+
+.book-synopsis p{
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: var(--placeholder);
+}
+
+.buy-buttons button{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 8px;
+    color: var(--dark-font);
+    font-family: raleway;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.buy-buttons #cart-button{
+    border: 4px solid var(--accent-color);
+    background-color: var(--background-color);
+}
+
+.buy-buttons #buy-button{
+    border: none;
+    background-color: var(--accent-color);
+}
